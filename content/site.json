@@ -1,0 +1,32 @@
+{
+  "heroText": "Bold Hong Kong supper club warmth, contemporary Chinese pop art, jade marble, cane chairs, lanterns and long tables.",
+  "introText": "Jade Room is colourful, warm and full of detail: checker floors, cane-backed chairs, glowing lanterns, green leather and pop-art walls made for shared Chinese dining.",
+  "eventsText": "Our private room seats up to 20 guests for celebrations, hosted dinners and warm lantern-lit banquets.",
+  "privateEventsEmail": "info@jaderoomchinese.com.au",
+  "privateEventsUrl": "https://www.opentable.com.au/private-dining/restaurant/307232/spaces/58b9b6af-80b0-4431-88c0-3da73ee19951?lang=en-AU&correlationId=de57219c-f617-41c4-9f57-0711ccf9374d",
+  "banquetMenuUrl": "/menu/banquet.html",
+  "drinksPackageUrl": "/assets/menus/drinks-package.pdf",
+  "giftCardText": "Give a long-table Jade Room evening: supper club warmth, roast duck, cocktails and lantern light, ready whenever they are.",
+  "giftCardUrl": "https://giftcards.nowbookit.com/cards/card-selection?accountid=c841d62d-257b-40e7-8a6b-1fed4b87f86e&venueid=14619&theme=light&accent=95,124,138",
+  "address": "Shop 5045, 19 Robina Town Centre Drive, Robina Town Centre, QLD 4230",
+  "parking": "Closest Carpark is the upper level parking in “The Kitchen” near the EMF Gym",
+  "mapUrl": "https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6",
+  "phone": "07 2141 6732",
+  "email": "info@jaderoomchinese.com.au",
+  "bookingUrl": "/#bookings",
+  "enquiryUrl": "mailto:info@jaderoomchinese.com.au",
+  "hours": [
+    {
+      "days": "Yum Cha",
+      "hours": "11am - 3pm"
+    },
+    {
+      "days": "Dinner",
+      "hours": "5pm - 9pm"
+    },
+    {
+      "days": "Open",
+      "hours": "7 Days"
+    }
+  ]
+}

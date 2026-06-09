@@ -1,0 +1,82 @@
+backend:
+  name: github
+  repo: your-github-username/jade-room-website
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "https://your-netlify-site.netlify.app"
+display_url: "https://your-netlify-site.netlify.app"
+logo_url: "/assets/responsive/jade-room-hero-1400.jpg"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "site"
+        label: "Homepage & Contact"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Hero Text", name: "heroText", widget: "text" }
+          - { label: "Intro Text", name: "introText", widget: "text" }
+          - { label: "Events Text", name: "eventsText", widget: "text" }
+          - { label: "Private Room Email", name: "privateEventsEmail", widget: "string" }
+          - { label: "Private Room URL", name: "privateEventsUrl", widget: "string" }
+          - { label: "Banquet Menu URL", name: "banquetMenuUrl", widget: "string" }
+          - { label: "Drinks Package URL", name: "drinksPackageUrl", widget: "string" }
+          - { label: "Gift Card Text", name: "giftCardText", widget: "text" }
+          - { label: "Gift Card URL", name: "giftCardUrl", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Parking", name: "parking", widget: "text" }
+          - { label: "Google Maps URL", name: "mapUrl", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Booking URL", name: "bookingUrl", widget: "string" }
+          - { label: "Enquiry URL", name: "enquiryUrl", widget: "string" }
+          - label: "Opening Hours"
+            name: "hours"
+            widget: "list"
+            fields:
+              - { label: "Days", name: "days", widget: "string" }
+              - { label: "Hours", name: "hours", widget: "string" }
+
+  - name: "menu"
+    label: "Menu"
+    files:
+      - name: "menu_items"
+        label: "Menu Page"
+        file: "content/menu.json"
+        format: "json"
+        fields:
+          - label: "Menu Highlights"
+            name: "highlights"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+          - label: "Menu Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Page URL", name: "pageUrl", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+              - { label: "PDF URL", name: "pdfUrl", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Category", name: "category", widget: "string", required: false }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Price", name: "price", widget: "string" }
