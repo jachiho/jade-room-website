@@ -174,9 +174,12 @@ function createMenuRows(items = []) {
     const itemCopy = document.createElement("div");
     const itemName = document.createElement("h3");
     itemName.textContent = item.name;
-    const itemDescription = document.createElement("p");
-    itemDescription.textContent = item.description;
-    itemCopy.append(itemName, itemDescription);
+    itemCopy.append(itemName);
+    if (item.description) {
+      const itemDescription = document.createElement("p");
+      itemDescription.textContent = item.description;
+      itemCopy.append(itemDescription);
+    }
 
     const price = document.createElement("span");
     price.className = "menu-price";
