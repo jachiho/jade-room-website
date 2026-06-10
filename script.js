@@ -406,6 +406,7 @@ async function init() {
   setHref("[data-content='drinksPackageUrl']", site.drinksPackageUrl || "/assets/menus/drinks-package.pdf");
   setHref("[data-content='giftCardUrl']", site.giftCardUrl || "#visit");
   setHref("[data-content='mapUrl']", site.mapUrl || "https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6");
+  setHref("[data-map-link]", site.mapUrl || "https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6");
   setHref("[data-content='phone']", site.phone ? `tel:${site.phone.replace(/\s/g, "")}` : "");
   setHref("[data-content='email']", site.email ? `mailto:${site.email}` : "");
 
