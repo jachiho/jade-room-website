@@ -377,6 +377,17 @@ h2 {
     url("/assets/responsive/jade-room-food-700.jpg") center / cover;
 }
 
+.gallery-hero {
+  background:
+    linear-gradient(90deg, rgba(14, 36, 28, 0.9), rgba(17, 17, 15, 0.38)),
+    linear-gradient(0deg, rgba(14, 36, 28, 1), rgba(17, 17, 15, 0.06) 46%),
+    url("/assets/venue-fitout/main-dining-ceiling-1600.jpg") center / cover;
+}
+
+.gallery-section {
+  padding-top: clamp(2.5rem, 6vw, 5rem);
+}
+
 .menu-detail-hero {
   position: relative;
   min-height: 58vh;
