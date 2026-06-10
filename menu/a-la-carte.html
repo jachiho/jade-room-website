@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Jade Room a la carte menu." />
     <title>A La Carte Menu | Jade Room</title>
-    <link rel="stylesheet" href="/styles.css?v=fitout-32" />
+    <link rel="stylesheet" href="/styles.css?v=fitout-33" />
   </head>
   <body data-menu-page-id="a-la-carte">
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand-mark" href="/" aria-label="Jade Room home"><img src="/assets/brand/jade-room-logo-header.png" alt="Jade Room 翠玉軒" /></a>
-      <nav class="nav-links" aria-label="Site sections">
+      <nav class="nav-links" id="mobile-menu" aria-label="Site sections">
         <a href="/menu.html">Menu</a>
         <a href="/private-room.html">Private Room</a>
         <a href="/#visit">Visit</a>
       </nav>
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
       <a class="header-action" data-content="bookingUrl" href="/#bookings">Book</a>
     </header>
 
@@ -58,6 +59,6 @@
       </div>
     </footer>
 
-    <script src="/script.js?v=fitout-32" type="module"></script>
+    <script src="/script.js?v=fitout-33" type="module"></script>
   </body>
 </html>

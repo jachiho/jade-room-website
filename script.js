@@ -332,6 +332,37 @@ function renderBookingWidget() {
   }
 }
 
+function initMobileMenu() {
+  const toggle = document.querySelector(".mobile-menu-toggle");
+  const nav = document.querySelector(".nav-links");
+  if (!toggle || !nav) return;
+
+  const closeMenu = () => {
+    toggle.setAttribute("aria-expanded", "false");
+    nav.classList.remove("is-open");
+  };
+
+  toggle.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!isOpen));
+    nav.classList.toggle("is-open", !isOpen);
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!nav.classList.contains("is-open")) return;
+    if (nav.contains(event.target) || toggle.contains(event.target)) return;
+    closeMenu();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
+  });
+}
+
 function initMotion() {
   const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
   if (motionQuery.matches) return;
@@ -416,6 +447,7 @@ async function init() {
   renderMenuDirectory(menu.sections);
   renderMenuDetail(menu.sections);
   renderBookingWidget();
+  initMobileMenu();
   initMotion();
 }
 
