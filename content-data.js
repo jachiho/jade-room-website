@@ -1,0 +1,1721 @@
+// Snapshot of content/site.json + content/menu.json — used when the site is opened
+// directly from disk (file://). When served over HTTP, the live JSON files win.
+window.JADE_CONTENT = {
+  "site": {
+    "heroText": "Bold Hong Kong supper club warmth, contemporary Chinese pop art, jade marble, cane chairs, lanterns and long tables.",
+    "introText": "Jade Room is colourful, warm and full of detail: checker floors, cane-backed chairs, glowing lanterns, green leather and pop-art walls made for shared Chinese dining.",
+    "eventsText": "Our private room seats up to 20 guests for celebrations, hosted dinners and warm lantern-lit banquets.",
+    "privateEventsEmail": "info@jaderoomchinese.com.au",
+    "privateEventsUrl": "https://www.opentable.com.au/private-dining/restaurant/307232/spaces/58b9b6af-80b0-4431-88c0-3da73ee19951?lang=en-AU&correlationId=de57219c-f617-41c4-9f57-0711ccf9374d",
+    "banquetMenuUrl": "/menu/banquet.html",
+    "drinksPackageUrl": "/assets/menus/drinks-package.pdf",
+    "giftCardText": "Give a long-table Jade Room evening: supper club warmth, roast duck, cocktails and lantern light, ready whenever they are.",
+    "giftCardUrl": "https://giftcards.nowbookit.com/cards/card-selection?accountid=c841d62d-257b-40e7-8a6b-1fed4b87f86e&venueid=14619&theme=light&accent=95,124,138",
+    "address": "Shop 5045, 19 Robina Town Centre Drive, Robina Town Centre, QLD 4230",
+    "parking": "Closest Carpark is the upper level parking in “The Kitchen” near the EMF Gym",
+    "mapUrl": "https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6",
+    "phone": "07 2141 6732",
+    "email": "info@jaderoomchinese.com.au",
+    "bookingUrl": "/#bookings",
+    "enquiryUrl": "mailto:info@jaderoomchinese.com.au",
+    "hours": [
+      {
+        "days": "Yum Cha",
+        "hours": "11am - 3pm"
+      },
+      {
+        "days": "Dinner",
+        "hours": "5pm - 9pm"
+      },
+      {
+        "days": "Open",
+        "hours": "7 Days"
+      }
+    ]
+  },
+  "menu": {
+    "highlights": [
+      {
+        "name": "Jade Room Roast Duck",
+        "description": "Crisp skin, five-spice perfume, plum caramel and pickled cucumber.",
+        "price": "Market",
+        "image": "/assets/menu-responsive/roast-duck-700.jpg",
+        "imageAlt": "Crisp roast duck slices with plum glaze and pickled cucumber on a jade ceramic plate"
+      },
+      {
+        "name": "Typhoon Shelter Prawns",
+        "description": "Golden garlic crumb, chilli, scallion and warm wok smoke.",
+        "price": "$32",
+        "image": "/assets/menu-responsive/typhoon-shelter-prawns-700.jpg",
+        "imageAlt": "Typhoon shelter prawns with golden garlic crumb, chilli and scallion"
+      },
+      {
+        "name": "Silken Tofu, Black Bean",
+        "description": "Steamed tofu, fermented black bean, ginger oil and brassica greens.",
+        "price": "$24",
+        "image": "/assets/menu-responsive/silken-tofu-black-bean-700.jpg",
+        "imageAlt": "Silken tofu with black bean sauce, ginger oil and greens in a jade bowl"
+      },
+      {
+        "name": "Char Siu Pork Collar",
+        "description": "Cognac glaze, sesame, mustard greens and charred spring onion.",
+        "price": "$34",
+        "image": "/assets/menu-responsive/char-siu-pork-collar-700.jpg",
+        "imageAlt": "Glossy char siu pork collar with sesame, greens and charred spring onion"
+      },
+      {
+        "name": "XO Noodles",
+        "description": "House XO, egg noodles, Chinese celery and wok-fried aromatics.",
+        "price": "$28",
+        "image": "/assets/menu-responsive/xo-noodles-700.jpg",
+        "imageAlt": "XO egg noodles with scallion, chilli and wok-fried aromatics"
+      },
+      {
+        "name": "Mango Pomelo Sago",
+        "description": "Chilled mango, citrus, coconut cream and pomelo pearls.",
+        "price": "$16",
+        "image": "/assets/menu-responsive/mango-pomelo-sago-700.jpg",
+        "imageAlt": "Mango pomelo sago dessert with coconut cream and pomelo pearls"
+      }
+    ],
+    "sections": [
+      {
+        "id": "a-la-carte",
+        "label": "A La Carte",
+        "intro": "The full Jade Room shared menu, from appetizers and dumplings to live seafood, roasts, clay pots, vegetables, rice and noodles.",
+        "pageUrl": "/menu/a-la-carte.html",
+        "image": "/assets/responsive/jade-room-food-1100.jpg",
+        "imageAlt": "Roast duck and char siu sharing plate on dark timber with jade ceramics",
+        "pdfUrl": "/assets/menus/20260330-jade-menu-copy.pdf",
+        "items": [
+          {
+            "category": "Appetizers",
+            "name": "Home-made Spring Rolls (4)",
+            "description": "Pork and assorted vegetables, sweet chilli sauce.",
+            "price": "$14"
+          },
+          {
+            "category": "Appetizers",
+            "name": "Vegetarian Spring Rolls (4) (V)",
+            "description": "Assorted Chinese vegetables, sweet chilli sauce.",
+            "price": "$14"
+          },
+          {
+            "category": "Appetizers",
+            "name": "Prawn Toasts (4)",
+            "description": "Sesame and prawns on crispy toast with creamy mayonnaise.",
+            "price": "$15"
+          },
+          {
+            "category": "Appetizers",
+            "name": "Five Spices Quail",
+            "description": "Quail wok tossed with five spices, served in two halves.",
+            "price": "$16"
+          },
+          {
+            "category": "Appetizers",
+            "name": "Satay Chicken Skewers (3)",
+            "description": "Chicken breast, peanut and satay sauce.",
+            "price": "$12"
+          },
+          {
+            "category": "Appetizers",
+            "name": "Pickled Cucumber (V)",
+            "description": "Cucumber strips pickled with black vinegar, sesame oil and garlic.",
+            "price": "$16"
+          },
+          {
+            "category": "Appetizers",
+            "name": "Steamed Local Scallops (2) (G)",
+            "description": "Australian scallops steamed with garlic and vermicelli.",
+            "price": "$15"
+          },
+          {
+            "category": "Appetizers",
+            "name": "San Choy Bao (4)",
+            "description": "Wok fried fillings served in lettuce leaf. Choice of chicken (G) or seafood.",
+            "price": "$18 / $22"
+          },
+          {
+            "category": "Dumplings",
+            "name": "Dim Sum Platter",
+            "description": "Prawn dumpling, siu mai, prawn and chive dumpling, two of each.",
+            "price": "$26"
+          },
+          {
+            "category": "Dumplings",
+            "name": "Jade Room Siu Mai (3)",
+            "description": "Signature steamed dim sum topped with fish roe.",
+            "price": "$12"
+          },
+          {
+            "category": "Dumplings",
+            "name": "Xiao Long Bao (3)",
+            "description": "Steamed pork dumplings with broth inside, vinegar on the side.",
+            "price": "$12"
+          },
+          {
+            "category": "Dumplings",
+            "name": "Pan-Fried Pork and Chives Dumplings (3)",
+            "description": "Pan-fried pork and chive dumplings.",
+            "price": "$9"
+          },
+          {
+            "category": "Dumplings",
+            "name": "Black Truffle Crystal Dumplings (3)",
+            "description": "Steamed vegetarian crystal dumplings with black truffle.",
+            "price": "$12"
+          },
+          {
+            "category": "Soup",
+            "name": "Sweet Corn Soup",
+            "description": "With chicken or spanner crab meat.",
+            "price": "$11 / $14"
+          },
+          {
+            "category": "Soup",
+            "name": "Wonton Soup",
+            "description": "Pork, prawn and Chinese mushroom wontons with BBQ pork and vegetables.",
+            "price": "$13"
+          },
+          {
+            "category": "Soup",
+            "name": "Seafood & Tofu Soup",
+            "description": "Seafood and tofu soup.",
+            "price": "$14"
+          },
+          {
+            "category": "Soup",
+            "name": "Hot & Sour Soup (S)",
+            "description": "Classic spicy Sichuan soup with shredded pork and tofu.",
+            "price": "$13"
+          },
+          {
+            "category": "Peking Duck",
+            "name": "Peking Duck - 2 Courses",
+            "description": "Freshly prepared in-house daily, roasted until crisp and served with pancakes. Course two choice of duck san choy bao, roast duck, duck fried rice or noodle, or duck stir fry.",
+            "price": "$55 half / $84 full"
+          },
+          {
+            "category": "Live Seafood",
+            "name": "Lobster",
+            "description": "Market priced live lobster. Cooking styles include sashimi, supreme broth, typhoon shelter style, garlic butter, golden spicy, salt and pepper.",
+            "price": "Market price"
+          },
+          {
+            "category": "Live Seafood",
+            "name": "Coral Trout",
+            "description": "Market priced live coral trout. Steamed with ginger and shallot, or filleted and wok fried with snow peas.",
+            "price": "Market price"
+          },
+          {
+            "category": "Live Seafood",
+            "name": "Abalone",
+            "description": "Market priced live abalone. Steamed thinly sliced in shell, or poached in broth.",
+            "price": "Market price"
+          },
+          {
+            "category": "Live Seafood",
+            "name": "Mud Crab",
+            "description": "Market priced live mud crab. Ginger and shallot, Singaporean, salt and pepper, typhoon shelter style, black pepper and butter, golden egg yolk, or egg yolk and vermicelli.",
+            "price": "Market price"
+          },
+          {
+            "category": "Live Seafood",
+            "name": "King Crab",
+            "description": "Market priced live king crab. Black pepper and butter, salt and pepper, typhoon shelter style, steamed with Hua Diao, or wok fried with foie gras for an extra cost.",
+            "price": "Market price"
+          },
+          {
+            "category": "Live Seafood",
+            "name": "Snow Crab",
+            "description": "Market priced live snow crab. Steamed with Hua Diao, or wok fried with black pepper and butter.",
+            "price": "Market price"
+          },
+          {
+            "category": "Seafood",
+            "name": "XO Stir Fried King Prawns and Scallops",
+            "description": "King prawns and scallops wok fried with XO sauce.",
+            "price": "$42"
+          },
+          {
+            "category": "Seafood",
+            "name": "Supreme Seafood (G)",
+            "description": "Stir fried scallop, prawn, fish fillet, calamari and broccoli.",
+            "price": "$40"
+          },
+          {
+            "category": "Seafood",
+            "name": "Golden King Prawns",
+            "description": "Battered king prawns tossed with egg yolk.",
+            "price": "$40"
+          },
+          {
+            "category": "Seafood",
+            "name": "Honey King Prawns",
+            "description": "King prawns with honey sauce.",
+            "price": "$38"
+          },
+          {
+            "category": "Seafood",
+            "name": "Wok Fried Scallops",
+            "description": "Australian premium scallops wok fried with broccoli.",
+            "price": "$46"
+          },
+          {
+            "category": "Seafood",
+            "name": "Large Coral Trout (Half) 2 Way",
+            "description": "First course wok fried. Second course choice of braised, salt and pepper, or soup.",
+            "price": "$168"
+          },
+          {
+            "category": "Seafood",
+            "name": "Steamed Fish Fillet with Ginger and Shallot (G)",
+            "description": "Steamed fish fillet with ginger, shallot and soy.",
+            "price": "$32"
+          },
+          {
+            "category": "Seafood",
+            "name": "Salt & Pepper Fish Fillet",
+            "description": "Crisp fish fillet tossed with salt and pepper seasoning.",
+            "price": "$32"
+          },
+          {
+            "category": "Seafood",
+            "name": "Signature XO Wok Fried Pipi",
+            "description": "Wok fried pipi with XO sauce on a crispy cake of vermicelli.",
+            "price": "$38"
+          },
+          {
+            "category": "Seafood",
+            "name": "Crispy White Bait with Golden Egg Yolk",
+            "description": "Battered white bait tossed with egg yolk.",
+            "price": "$32"
+          },
+          {
+            "category": "Seafood",
+            "name": "Salt & Pepper King Prawns / Calamari",
+            "description": "King prawns or calamari tossed with salt and pepper seasoning.",
+            "price": "$38 / $35"
+          },
+          {
+            "category": "Seafood",
+            "name": "Braised Abalone in Supreme Oyster Sauce",
+            "description": "Whole abalone braised in supreme oyster sauce.",
+            "price": "$128 medium / $148 large"
+          },
+          {
+            "category": "Clay Pot",
+            "name": "Salted Fish Eggplant in Clay Pot",
+            "description": "Eggplant braised with salted fish flakes and minced chicken.",
+            "price": "$29"
+          },
+          {
+            "category": "Clay Pot",
+            "name": "Oysters and Shallot Clay Pot",
+            "description": "Lightly battered oysters wok fried with ginger and shallot.",
+            "price": "$48"
+          },
+          {
+            "category": "Clay Pot",
+            "name": "Taiwanese Style Basil Chicken in Claypot",
+            "description": "Chicken with bone in soy, Shaoxing wine, ginger and garlic, wok tossed with Thai basil.",
+            "price": "$32"
+          },
+          {
+            "category": "Clay Pot",
+            "name": "XO King Prawns with Vermicelli in Clay Pot",
+            "description": "Large king prawns in shell with XO sauce.",
+            "price": "$48"
+          },
+          {
+            "category": "Clay Pot",
+            "name": "Beef Brisket Clay Pot",
+            "description": "Slow cooked beef brisket in Chu Hou sauce.",
+            "price": "$36"
+          },
+          {
+            "category": "Clay Pot",
+            "name": "Beef Brisket with Rice Noodle in Clay Pot",
+            "description": "Beef brisket with rice noodle in clay pot.",
+            "price": "$32"
+          },
+          {
+            "category": "Traditional Chinese",
+            "name": "Stir Fried Pork Intestines in Spicy Sauce",
+            "description": "Pork intestines wok fried in spicy sauce.",
+            "price": "$42"
+          },
+          {
+            "category": "Traditional Chinese",
+            "name": "Stir Fried Pork Intestines with Preserved Vegetables",
+            "description": "Pork intestines wok fried with preserved vegetables.",
+            "price": "$42"
+          },
+          {
+            "category": "Traditional Chinese",
+            "name": "XO Wok Fried Duck Tongue",
+            "description": "Duck tongue wok fried with XO sauce.",
+            "price": "$42"
+          },
+          {
+            "category": "Traditional Chinese",
+            "name": "Free Range Chicken Soup Hotpot",
+            "description": "Free range chicken soup hotpot.",
+            "price": "$58"
+          },
+          {
+            "category": "Beef",
+            "name": "Stir Fried Eye Fillet with Tea Leaves",
+            "description": "Eye fillet wok fried with tea leaves.",
+            "price": "$40"
+          },
+          {
+            "category": "Beef",
+            "name": "Wagyu Beef with Crispy Garlic",
+            "description": "Diced wagyu wok fried in BBQ sauce and garlic.",
+            "price": "$58"
+          },
+          {
+            "category": "Beef",
+            "name": "Black Pepper Eye Fillet (G)",
+            "description": "Diced eye fillet, mushrooms and black pepper sauce.",
+            "price": "$40"
+          },
+          {
+            "category": "Beef",
+            "name": "Beijing Beef",
+            "description": "Crispy beef julienne with oriental sauce.",
+            "price": "$30"
+          },
+          {
+            "category": "Beef",
+            "name": "Blanched Wagyu Slices with Bean Sprouts",
+            "description": "Blanched wagyu slices served with bean sprouts.",
+            "price": "$58"
+          },
+          {
+            "category": "Beef",
+            "name": "Black Bean Beef (G)",
+            "description": "Beef fillet, onion, capsicum and black bean sauce.",
+            "price": "$28"
+          },
+          {
+            "category": "Lamb",
+            "name": "Cumin Lamb",
+            "description": "Lamb wok fried with cumin spices.",
+            "price": "$36"
+          },
+          {
+            "category": "Lamb",
+            "name": "Wok Fried Lamb with Shallot",
+            "description": "Lamb fillet with shallot, onion and garlic.",
+            "price": "$36"
+          },
+          {
+            "category": "Pork",
+            "name": "Sweet & Sour Pork",
+            "description": "Classic sweet and sour pork.",
+            "price": "$28"
+          },
+          {
+            "category": "Pork",
+            "name": "Sticky Glazed Pork",
+            "description": "Juicy pork ribs with pineapple, wok tossed in a sweet and tangy sauce.",
+            "price": "$32"
+          },
+          {
+            "category": "Pork",
+            "name": "Garlic Pork Ribs",
+            "description": "Pork ribs tossed with garlic.",
+            "price": "$32"
+          },
+          {
+            "category": "Pork",
+            "name": "Pork Belly Slow Cooked with Preserved Vegetables",
+            "description": "Slow cooked pork belly with preserved vegetables.",
+            "price": "$34"
+          },
+          {
+            "category": "Poultry",
+            "name": "Signature Roasted Baby Pigeon",
+            "description": "Jade Room signature roasted baby pigeon.",
+            "price": "$58"
+          },
+          {
+            "category": "Poultry",
+            "name": "Slow Roasted Duck (Half)",
+            "description": "Half duck, slow roasted.",
+            "price": "$38"
+          },
+          {
+            "category": "Poultry",
+            "name": "Salt & Pepper Duck",
+            "description": "Half duck chopped and tossed with salt and pepper seasoning.",
+            "price": "$38"
+          },
+          {
+            "category": "Poultry",
+            "name": "Steamed Free Range Chicken (Half)",
+            "description": "Free range chicken has less meat and a stronger chicken taste.",
+            "price": "$42"
+          },
+          {
+            "category": "Poultry",
+            "name": "Kung Pao Chicken",
+            "description": "Chicken breast wok tossed with chilli bean paste, dried red chillies, onions, peppers and peanuts.",
+            "price": "$30"
+          },
+          {
+            "category": "Poultry",
+            "name": "Sweet & Sour Chicken / Cashew Chicken",
+            "description": "Choice of sweet and sour chicken or cashew chicken.",
+            "price": "$28"
+          },
+          {
+            "category": "Poultry",
+            "name": "Honey Chicken / Lemon Chicken",
+            "description": "Choice of honey chicken or lemon chicken.",
+            "price": "$28"
+          },
+          {
+            "category": "Hot Plate",
+            "name": "Peking Eye Fillet (G)",
+            "description": "Eye fillet stir fried with oriental sauce.",
+            "price": "$41"
+          },
+          {
+            "category": "Hot Plate",
+            "name": "Black Pepper Chicken (G)",
+            "description": "Tender chicken fillets with mushroom and black pepper sauce.",
+            "price": "$29"
+          },
+          {
+            "category": "Hot Plate",
+            "name": "Mongolian Lamb",
+            "description": "Premium lamb fillet with capsicum and Mongolian sauce.",
+            "price": "$37"
+          },
+          {
+            "category": "Hot Plate",
+            "name": "Garlic King Prawns (G)",
+            "description": "King prawns with garlic sauce.",
+            "price": "$39"
+          },
+          {
+            "category": "Sichuan Spice",
+            "name": "Bang Bang Chicken (S)",
+            "description": "Diced chicken thigh wok fried with dried chilli.",
+            "price": "$30"
+          },
+          {
+            "category": "Sichuan Spice",
+            "name": "Sichuan Poached Fish / Beef in Spicy Soup (S)",
+            "description": "Poached fish fillet or beef fillet in hot Sichuan chilli oil.",
+            "price": "$48 / $42"
+          },
+          {
+            "category": "Sichuan Spice",
+            "name": "Sichuan Double Cooked Pork (S)",
+            "description": "Double cooked pork belly simmered in spices, sliced, then stir fried Sichuan style.",
+            "price": "$32"
+          },
+          {
+            "category": "Sichuan Spice",
+            "name": "Poached Fish with Preserved Vegetables (S)",
+            "description": "Fish poached with preserved vegetables in Sichuan style broth.",
+            "price": "$48"
+          },
+          {
+            "category": "Sichuan Spice",
+            "name": "Sichuan Spicy Eggplant in Clay Pot (S)",
+            "description": "Eggplant served in a spicy Sichuan clay pot.",
+            "price": "$29"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Preserved Egg with Vegetables",
+            "description": "Vegetables with salted egg and preserved egg.",
+            "price": "$32"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Four Seasons Beans",
+            "description": "Green beans with chicken mince and onion.",
+            "price": "$28"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Deep Fried Bitter Melon with Egg Yolk",
+            "description": "Bitter melon deep fried and tossed with egg yolk.",
+            "price": "$28"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Water Spinach with Balachan",
+            "description": "Water spinach wok fried with balachan.",
+            "price": "$26"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Lettuce with Balachan in Claypot",
+            "description": "Lettuce with balachan served in clay pot.",
+            "price": "$26"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Stir Fried Mixed Vegetables with Garlic",
+            "description": "Mixed vegetables wok fried with garlic.",
+            "price": "$25"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Seasonal Vegetables with Oyster Sauce",
+            "description": "Kai lan, choy sum or bok choy with oyster sauce.",
+            "price": "$24"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Braised Premium Chinese Mushrooms with Vegetables",
+            "description": "Premium Chinese mushrooms braised with vegetables.",
+            "price": "$32"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Baby Spinach in Supreme Broth",
+            "description": "Baby spinach served in supreme broth.",
+            "price": "$34"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Mixed Mushrooms and Tofu Clay Pot",
+            "description": "Mixed mushrooms and tofu served in clay pot.",
+            "price": "$28"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Golden Crispy Tofu with Salted Egg Yolk",
+            "description": "Crispy tofu tossed with salted egg yolk.",
+            "price": "$28"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Ma Po Tofu",
+            "description": "Tofu with chicken mince, onion and chilli bean paste.",
+            "price": "$26"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Braised Tofu Clay Pot",
+            "description": "Braised tofu served in clay pot.",
+            "price": "$28"
+          },
+          {
+            "category": "Vegetables, Tofu and Eggs",
+            "name": "Fu Yung Omelette",
+            "description": "BBQ pork, chicken, onion, egg and gravy.",
+            "price": "$28"
+          },
+          {
+            "category": "Rice",
+            "name": "Yangzhou Fried Rice",
+            "description": "Classic fried rice with egg, BBQ pork and prawns.",
+            "price": "$22"
+          },
+          {
+            "category": "Rice",
+            "name": "Dried Meats Fried Glutinous Rice",
+            "description": "Glutinous rice fried with dried meats.",
+            "price": "$28"
+          },
+          {
+            "category": "Rice",
+            "name": "Truffle Vegetable Fried Rice",
+            "description": "Vegetable fried rice with truffle.",
+            "price": "$22"
+          },
+          {
+            "category": "Rice",
+            "name": "Chicken Fried Rice",
+            "description": "Diced chicken thigh, lettuce and egg.",
+            "price": "$22"
+          },
+          {
+            "category": "Rice",
+            "name": "Jasmine Rice (V) (G)",
+            "description": "Steamed jasmine rice.",
+            "price": "$4"
+          },
+          {
+            "category": "Noodles",
+            "name": "Street Style Wok Fried Noodles",
+            "description": "Fish cake, prawns and BBQ pork.",
+            "price": "$24"
+          },
+          {
+            "category": "Noodles",
+            "name": "XO Stir Fried Rice Noodles",
+            "description": "House made rice noodle rolls stir fried with XO sauce.",
+            "price": "$26"
+          },
+          {
+            "category": "Noodles",
+            "name": "Seafood Noodle",
+            "description": "Prawns, fish fillet, calamari, scallops, vegetables and crispy noodle.",
+            "price": "$32"
+          },
+          {
+            "category": "Noodles",
+            "name": "Chicken Noodle",
+            "description": "Chicken breast, vegetables and crispy noodle.",
+            "price": "$24"
+          },
+          {
+            "category": "Noodles",
+            "name": "Combination Noodle",
+            "description": "Prawn, calamari, chicken breast, BBQ pork, vegetables and crispy noodle.",
+            "price": "$28"
+          },
+          {
+            "category": "Noodles",
+            "name": "Singapore Noodle (S)",
+            "description": "BBQ pork, prawns, onion, curry powder, capsicum and sesame.",
+            "price": "$24"
+          },
+          {
+            "category": "Noodles",
+            "name": "Beef Ho Fun",
+            "description": "Beef fillet, onion, bean sprouts, shallot, flat rice noodle and sesame.",
+            "price": "$24"
+          }
+        ]
+      },
+      {
+        "id": "dim-sum",
+        "label": "Dim Sum",
+        "intro": "Steamed, pan-fried, deep-fried and baked dim sum, plus small dishes, rice noodle rolls, congee, rice and noodles.",
+        "pageUrl": "/menu/dim-sum.html",
+        "image": "/assets/menu-responsive/silken-tofu-black-bean-700.jpg",
+        "imageAlt": "Silken tofu with black bean sauce and greens in a jade bowl",
+        "pdfUrl": "/assets/menus/20260517-jade-dim-sum-reduced.pdf",
+        "items": [
+          {
+            "category": "Steamed",
+            "name": "11. Har Gow Prawn Dumpling",
+            "description": "Steamed prawn dumpling.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "12. Siu Mai (Pork & Prawn)",
+            "description": "Steamed pork and prawn siu mai.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "13. Scallop & Prawn Dumpling",
+            "description": "Steamed scallop and prawn dumpling.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "14. Truffle Veggie Dumpling",
+            "description": "Steamed vegetarian dumpling with truffle.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "15. Prawn and Chive Dumpling",
+            "description": "Steamed prawn and chive dumpling.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "16. Shanghai Soup Dumpling",
+            "description": "Steamed Shanghai soup dumpling.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "17. Steamed Beef Ball",
+            "description": "Steamed beef ball.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "18. Prawn & Pork Bean Curd Roll",
+            "description": "Steamed prawn and pork bean curd roll.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "19. Garlic Spare Ribs",
+            "description": "Steamed spare ribs with garlic.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "20. Chicken Glutinous Rice",
+            "description": "Steamed glutinous rice with chicken.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "21. Chicken Feet",
+            "description": "Steamed chicken feet.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "22. Honeycomb Tripe",
+            "description": "Steamed honeycomb tripe.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Steamed",
+            "name": "23. Beef Tripe Ginger Shallot",
+            "description": "Steamed beef tripe with ginger and shallot.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Pan Fried / Deep Fried",
+            "name": "31. Crispy Wagyu Beef Pastry",
+            "description": "Crispy pastry filled with wagyu beef.",
+            "price": "$18.80"
+          },
+          {
+            "category": "Pan Fried / Deep Fried",
+            "name": "32. Crispy Glutinous Dumplings",
+            "description": "Crispy glutinous dumplings.",
+            "price": "$10.80"
+          },
+          {
+            "category": "Pan Fried / Deep Fried",
+            "name": "33. Crispy Prawn Bean Curd Rolls",
+            "description": "Crispy bean curd rolls with prawn.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Pan Fried / Deep Fried",
+            "name": "34. Pan-Fried Turnip Cake",
+            "description": "Classic pan-fried turnip cake.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Pan Fried / Deep Fried",
+            "name": "35. Crispy Turnip Cake with Thousand Island Sauce",
+            "description": "Crispy turnip cake served with Thousand Island sauce.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Pan Fried / Deep Fried",
+            "name": "36. Pan-Fried Pork & Vegetable Dumplings",
+            "description": "Pan-fried dumplings with pork and vegetables.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Pan Fried / Deep Fried",
+            "name": "37. Crispy Prawn Salad Dumplings",
+            "description": "Crispy prawn salad dumplings.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Pan Fried / Deep Fried",
+            "name": "38. Sesame BBQ Pork Pastry",
+            "description": "Sesame pastry filled with BBQ pork.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Pan Fried / Deep Fried",
+            "name": "39A/39B. Spring Rolls - Pork / Vegetarian",
+            "description": "Fried spring rolls, choice of pork or vegetarian.",
+            "price": "$10.80"
+          },
+          {
+            "category": "Buns",
+            "name": "41. Golden Lava Custard Buns (3pcs)",
+            "description": "Steamed golden lava custard buns.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Buns",
+            "name": "42. BBQ Pork Buns",
+            "description": "Steamed buns filled with BBQ pork.",
+            "price": "$10.80"
+          },
+          {
+            "category": "Buns",
+            "name": "43. Pan-Fried Seafood Buns",
+            "description": "Pan-fried buns filled with seafood.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Buns",
+            "name": "44. Lotus Seed Paste Buns",
+            "description": "Steamed buns filled with lotus seed paste.",
+            "price": "$11.80"
+          },
+          {
+            "category": "Buns",
+            "name": "45. Matcha Buns",
+            "description": "Steamed matcha buns.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Desserts",
+            "name": "51. Custard Sesame Ball",
+            "description": "Sesame ball filled with custard.",
+            "price": "$10.80"
+          },
+          {
+            "category": "Desserts",
+            "name": "52. Fresh Mango Pudding",
+            "description": "Fresh mango pudding.",
+            "price": "$9.80"
+          },
+          {
+            "category": "Desserts",
+            "name": "53. Osmanthus Coconut Milk Jelly",
+            "description": "Osmanthus coconut milk jelly.",
+            "price": "$9.80"
+          },
+          {
+            "category": "Desserts",
+            "name": "54. Crispy Egg Tart",
+            "description": "Crispy egg tart.",
+            "price": "$10.80"
+          },
+          {
+            "category": "Desserts",
+            "name": "55. Pumpkin Red Bean Soft Cake",
+            "description": "Soft pumpkin cake with red bean.",
+            "price": "$10.80"
+          },
+          {
+            "category": "Small Dishes",
+            "name": "61. Roasted Duck",
+            "description": "Jade Room roasted duck.",
+            "price": "$18.80"
+          },
+          {
+            "category": "Small Dishes",
+            "name": "62. Four Seasons Beans with Chicken",
+            "description": "Four seasons beans wok fried with chicken.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Small Dishes",
+            "name": "63. Salt & Pepper Quail",
+            "description": "Quail tossed with salt and pepper seasoning.",
+            "price": "$16"
+          },
+          {
+            "category": "Small Dishes",
+            "name": "64. Golden Crispy Tofu with Salted Egg Yolk",
+            "description": "Crispy tofu tossed with salted egg yolk.",
+            "price": "$18.80"
+          },
+          {
+            "category": "Small Dishes",
+            "name": "65. Soya Noodle with Bean Sprouts",
+            "description": "Soya noodles wok fried with bean sprouts.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Small Dishes",
+            "name": "66. Pickled Cucumber",
+            "description": "Pickled cucumber.",
+            "price": "$16"
+          },
+          {
+            "category": "Small Dishes",
+            "name": "67. Crispy White Bait with Salt and Pepper",
+            "description": "Crispy white bait tossed with salt and pepper.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Small Dishes",
+            "name": "68. Seasonal Vegetables with Oyster Sauce",
+            "description": "Seasonal vegetables served with oyster sauce.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Rice Noodle Roll",
+            "name": "71. Crispy Prawn Roll",
+            "description": "Crispy prawn rice noodle roll.",
+            "price": "$20.80"
+          },
+          {
+            "category": "Rice Noodle Roll",
+            "name": "72. Prawn Rice Noodle Roll",
+            "description": "Rice noodle roll with prawn.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Rice Noodle Roll",
+            "name": "73. Char Siu BBQ Pork",
+            "description": "Rice noodle roll with char siu BBQ pork.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Rice Noodle Roll",
+            "name": "74. Crispy Youtiao",
+            "description": "Rice noodle roll with crispy youtiao.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Rice Noodle Roll",
+            "name": "75. HK-Style Mixed Sauce",
+            "description": "Rice noodle roll with Hong Kong-style mixed sauce.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Rice Noodle Roll",
+            "name": "76. Minced Beef",
+            "description": "Rice noodle roll with minced beef.",
+            "price": "$12.80"
+          },
+          {
+            "category": "Rice Noodle Roll",
+            "name": "77. Baby Spinach & Scallop",
+            "description": "Rice noodle roll with baby spinach and scallop.",
+            "price": "$18.80"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Street Style Wok Fried Noodles",
+            "description": "Street style wok fried noodles.",
+            "price": "$24"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Beef Brisket Rice Noodle Clay Pot",
+            "description": "Beef brisket with rice noodle in clay pot.",
+            "price": "$32"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "XO Stir Fried Rice Noodles",
+            "description": "Rice noodles stir fried with XO sauce.",
+            "price": "$26"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Singaporean Vermicelli",
+            "description": "Singapore-style vermicelli.",
+            "price": "$24"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Beef Ho Fun",
+            "description": "Flat rice noodle with beef.",
+            "price": "$24"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Seafood Noodle",
+            "description": "Noodles with seafood.",
+            "price": "$32"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Yangzhou Fried Rice",
+            "description": "Classic Yangzhou fried rice.",
+            "price": "$22"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Dried Meats Fried Glutinous Rice",
+            "description": "Glutinous rice fried with dried meats.",
+            "price": "$28"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Truffle Vegetable Fried Rice",
+            "description": "Vegetable fried rice with truffle.",
+            "price": "$22"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Chicken Fried Rice",
+            "description": "Fried rice with chicken.",
+            "price": "$22"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Preserved Egg and Pork Congee",
+            "description": "Congee with preserved egg and pork.",
+            "price": "$15"
+          },
+          {
+            "category": "Rice & Noodle",
+            "name": "Fish Fillet Congee",
+            "description": "Congee with fish fillet.",
+            "price": "$19"
+          },
+          {
+            "category": "Specials",
+            "name": "01. Imperial Treasures: 5 Kinds of Dim Sum",
+            "description": "Five kinds of dim sum, two pieces each.",
+            "price": "$46"
+          },
+          {
+            "category": "Specials",
+            "name": "02. Crispy Cheese Lava Balls",
+            "description": "Crispy cheese lava balls.",
+            "price": "$16.80"
+          },
+          {
+            "category": "Specials",
+            "name": "03. Crispy Asparagus & King Prawn Spring Roll",
+            "description": "Crispy spring roll with asparagus and king prawn.",
+            "price": "$16.80"
+          },
+          {
+            "category": "Specials",
+            "name": "04. Emerald XO Seafood Dumplings",
+            "description": "Emerald dumplings with XO seafood filling.",
+            "price": "$16.80"
+          },
+          {
+            "category": "Specials",
+            "name": "05. Golden Egg-Seared Glutinous Rice Chicken",
+            "description": "Glutinous rice chicken seared with golden egg.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Specials",
+            "name": "06. Aromatic Peppercorn Pork Dumplings",
+            "description": "Pork dumplings with aromatic peppercorn.",
+            "price": "$14.80"
+          },
+          {
+            "category": "Specials",
+            "name": "07. Angus Beef Dumplings Ginger & Shallot",
+            "description": "Angus beef dumplings with ginger and shallot.",
+            "price": "$14.80"
+          }
+        ]
+      },
+      {
+        "id": "banquet",
+        "label": "Banquet",
+        "intro": "Shared menus for groups, celebrations and long-table dining.",
+        "pageUrl": "/menu/banquet.html",
+        "image": "/assets/responsive/private-room-wide-900.jpg",
+        "imageAlt": "Private dining room with long marble table, lanterns and pop art",
+        "pdfUrl": "/assets/menus/banquet-menu.pdf",
+        "items": [
+          {
+            "name": "Jade Banquet",
+            "description": "Dim sum selection, roast duck, silken tofu, XO noodles and mango pomelo sago.",
+            "price": "$78 pp"
+          },
+          {
+            "name": "Supper Club Banquet",
+            "description": "Seafood starters, typhoon shelter prawns, char siu pork collar, seasonal greens and dessert.",
+            "price": "$98 pp"
+          },
+          {
+            "name": "Celebration Banquet",
+            "description": "A larger shared feast with premium roasts, seafood, banquet sides and dessert course.",
+            "price": "$128 pp"
+          }
+        ]
+      },
+      {
+        "id": "drinks",
+        "label": "Drinks",
+        "intro": "Beer, cocktails, wine, spirits, Chinese tea, non-alcoholic drinks and desserts from the Jade Room drinks list.",
+        "pageUrl": "/menu/drinks.html",
+        "image": "/assets/responsive/jade-room-bar-1100.jpg",
+        "imageAlt": "Jade green marble bar with cocktails and warm lantern light",
+        "pdfUrl": "/assets/menus/20251214-jade-wine-list-2-copy.pdf",
+        "items": [
+          {
+            "category": "Beer & Cider",
+            "name": "Asahi",
+            "description": "On tap, 300ml.",
+            "price": "$12"
+          },
+          {
+            "category": "Beer & Cider",
+            "name": "Tsing Tao",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Beer & Cider",
+            "name": "Corona",
+            "description": "",
+            "price": "$11"
+          },
+          {
+            "category": "Beer & Cider",
+            "name": "Great Northern Super Crisp",
+            "description": "",
+            "price": "$9"
+          },
+          {
+            "category": "Beer & Cider",
+            "name": "James Boags Light",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Beer & Cider",
+            "name": "Stone & Wood Pale Ale",
+            "description": "",
+            "price": "$11"
+          },
+          {
+            "category": "Beer & Cider",
+            "name": "Heineken Zero",
+            "description": "",
+            "price": "$9"
+          },
+          {
+            "category": "Beer & Cider",
+            "name": "Somersby Apple Cider",
+            "description": "",
+            "price": "$11"
+          },
+          {
+            "category": "Cocktails",
+            "name": "Osmanthus Golden",
+            "description": "Osmanthus infused gin, osmanthus honey, lemon juice and tonic.",
+            "price": "$20"
+          },
+          {
+            "category": "Cocktails",
+            "name": "Plum Spritz",
+            "description": "Japanese plum wine, prosecco, soda and bitters.",
+            "price": "$20"
+          },
+          {
+            "category": "Cocktails",
+            "name": "Yuzu Whisky Sour",
+            "description": "Yuzu jam, lemon juice, whisky and egg white.",
+            "price": "$20"
+          },
+          {
+            "category": "Cocktails",
+            "name": "Elderflower Blossom",
+            "description": "Elderflower liqueur, Ink Gin and lime.",
+            "price": "$20"
+          },
+          {
+            "category": "Cocktails",
+            "name": "Espresso Martini",
+            "description": "Vodka, Kahlua, espresso and simple syrup.",
+            "price": "$19"
+          },
+          {
+            "category": "Cocktails",
+            "name": "Margarita",
+            "description": "Tequila, Cointreau, lime juice and agave syrup.",
+            "price": "$19"
+          },
+          {
+            "category": "Cocktails",
+            "name": "Lychee Mojito",
+            "description": "Bacardi rum, lychee liqueur, fresh mint, fresh lime, syrup and soda.",
+            "price": "$19"
+          },
+          {
+            "category": "Cocktails",
+            "name": "Cosmopolitan",
+            "description": "Vodka, Cointreau, cranberry juice and lime juice.",
+            "price": "$19"
+          },
+          {
+            "category": "Sparkling",
+            "name": "Redbank Elevage Prosecco",
+            "description": "King Valley.",
+            "price": "$9 / $48"
+          },
+          {
+            "category": "Sparkling",
+            "name": "Riva Dei Frati Prosecco",
+            "description": "Italy.",
+            "price": "$68"
+          },
+          {
+            "category": "Sparkling",
+            "name": "Chandon",
+            "description": "Yarra Valley.",
+            "price": "$14 / $68"
+          },
+          {
+            "category": "Sparkling",
+            "name": "Veuve Clicquot Yellow Label",
+            "description": "France.",
+            "price": "$160"
+          },
+          {
+            "category": "White Wine",
+            "name": "Oxford Landing Estates Moscato",
+            "description": "Waikerie, SA.",
+            "price": "$9 / $38"
+          },
+          {
+            "category": "White Wine",
+            "name": "Pewsey Vale Riesling",
+            "description": "Eden Valley.",
+            "price": "$50"
+          },
+          {
+            "category": "White Wine",
+            "name": "Haha Pinot Gris",
+            "description": "Hawke's Bay.",
+            "price": "$11 / $45"
+          },
+          {
+            "category": "White Wine",
+            "name": "Tim Adams Pinot Gris",
+            "description": "Clare Valley.",
+            "price": "$56"
+          },
+          {
+            "category": "White Wine",
+            "name": "Corte Giara DOC Pinot Grigio",
+            "description": "Veneto, Italy.",
+            "price": "$14 / $56"
+          },
+          {
+            "category": "White Wine",
+            "name": "Counter Point Sauvignon Blanc",
+            "description": "South Australia.",
+            "price": "$9 / $38"
+          },
+          {
+            "category": "White Wine",
+            "name": "Twin Islands Sauvignon Blanc",
+            "description": "Marlborough.",
+            "price": "$12 / $48"
+          },
+          {
+            "category": "White Wine",
+            "name": "Sidewood Sauvignon Blanc",
+            "description": "Adelaide Hills.",
+            "price": "$60"
+          },
+          {
+            "category": "White Wine",
+            "name": "Pitchfork Chardonnay",
+            "description": "Margaret River.",
+            "price": "$11 / $45"
+          },
+          {
+            "category": "White Wine",
+            "name": "Heggies Chardonnay",
+            "description": "Eden Valley.",
+            "price": "$13 / $52"
+          },
+          {
+            "category": "Red Wine",
+            "name": "Y Series Pinot Noir",
+            "description": "South Australia.",
+            "price": "$9 / $38"
+          },
+          {
+            "category": "Red Wine",
+            "name": "Opawa Pinot Noir",
+            "description": "Marlborough.",
+            "price": "$60"
+          },
+          {
+            "category": "Red Wine",
+            "name": "Smith & Hooper Merlot",
+            "description": "Wrattonbully.",
+            "price": "$45"
+          },
+          {
+            "category": "Red Wine",
+            "name": "Sister's Run Old Testament Cabernet",
+            "description": "Coonawarra.",
+            "price": "$10 / $40"
+          },
+          {
+            "category": "Red Wine",
+            "name": "Yalumba 'The Cigar' Cabernet Sauvignon",
+            "description": "Coonawarra.",
+            "price": "$78"
+          },
+          {
+            "category": "Red Wine",
+            "name": "Pepperjack Shiraz",
+            "description": "Barossa Valley.",
+            "price": "$11 / $45"
+          },
+          {
+            "category": "Red Wine",
+            "name": "Dandelion Vineyards Shiraz",
+            "description": "McLaren Vale.",
+            "price": "$48"
+          },
+          {
+            "category": "Red Wine",
+            "name": "Chris Ringland Shiraz",
+            "description": "Barossa Valley.",
+            "price": "$56"
+          },
+          {
+            "category": "Red Wine",
+            "name": "Jim Barry 'The McRae Wood' Shiraz",
+            "description": "Clare Valley.",
+            "price": "$95"
+          },
+          {
+            "category": "Rose",
+            "name": "La Vieille Ferme",
+            "description": "France.",
+            "price": "$11 / $45"
+          },
+          {
+            "category": "Rose",
+            "name": "Saint Louis de Provence",
+            "description": "Provence, France.",
+            "price": "$14 / $56"
+          },
+          {
+            "category": "Vodka",
+            "name": "Smirnoff",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Vodka",
+            "name": "Grey Goose",
+            "description": "",
+            "price": "$15"
+          },
+          {
+            "category": "Gin",
+            "name": "Gordons",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Gin",
+            "name": "Bombay Sapphire",
+            "description": "",
+            "price": "$13"
+          },
+          {
+            "category": "Gin",
+            "name": "Hendricks",
+            "description": "",
+            "price": "$15"
+          },
+          {
+            "category": "Whisky",
+            "name": "Johnnie Walker Red",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Whisky",
+            "name": "Johnnie Walker Black",
+            "description": "",
+            "price": "$13"
+          },
+          {
+            "category": "Whisky",
+            "name": "Chivas Regal 12 Year",
+            "description": "",
+            "price": "$12"
+          },
+          {
+            "category": "Whisky",
+            "name": "Glenfiddich 12 Year",
+            "description": "",
+            "price": "$15"
+          },
+          {
+            "category": "Whisky",
+            "name": "Jameson",
+            "description": "",
+            "price": "$13"
+          },
+          {
+            "category": "Whisky",
+            "name": "Southern Comfort",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Whisky",
+            "name": "Canadian Club",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Whisky",
+            "name": "Suntory Toki",
+            "description": "",
+            "price": "$15"
+          },
+          {
+            "category": "Bourbon",
+            "name": "Jack Daniels No. 7",
+            "description": "",
+            "price": "$11"
+          },
+          {
+            "category": "Bourbon",
+            "name": "Jim Beam",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Bourbon",
+            "name": "Maker's Mark",
+            "description": "",
+            "price": "$12"
+          },
+          {
+            "category": "Rum",
+            "name": "Bundaberg",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Rum",
+            "name": "Appleton Signature",
+            "description": "",
+            "price": "$13"
+          },
+          {
+            "category": "Rum",
+            "name": "Bacardi",
+            "description": "",
+            "price": "$11"
+          },
+          {
+            "category": "Rum",
+            "name": "Kraken",
+            "description": "",
+            "price": "$13"
+          },
+          {
+            "category": "Tequila",
+            "name": "Sierra",
+            "description": "",
+            "price": "$12"
+          },
+          {
+            "category": "Tequila",
+            "name": "Patron Silver",
+            "description": "",
+            "price": "$17"
+          },
+          {
+            "category": "Cognac",
+            "name": "St Remy",
+            "description": "",
+            "price": "$11"
+          },
+          {
+            "category": "Cognac",
+            "name": "Hennessy VSOP",
+            "description": "",
+            "price": "$20"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Baileys",
+            "description": "Irish cream.",
+            "price": "$9"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Cointreau",
+            "description": "Orange.",
+            "price": "$12"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Chambord",
+            "description": "Raspberry.",
+            "price": "$14"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Disaronno",
+            "description": "Amaretto.",
+            "price": "$12"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Frangelico",
+            "description": "Hazelnut.",
+            "price": "$10"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Galliano",
+            "description": "Sambuca.",
+            "price": "$11"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Kahlua",
+            "description": "Coffee.",
+            "price": "$9"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Licor 43",
+            "description": "Spanish liqueur.",
+            "price": "$11"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Malibu",
+            "description": "Coconut.",
+            "price": "$9"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Midori",
+            "description": "Melon.",
+            "price": "$11"
+          },
+          {
+            "category": "Liqueur",
+            "name": "Tia Maria",
+            "description": "Coffee.",
+            "price": "$10"
+          },
+          {
+            "category": "Port",
+            "name": "Penfold Father",
+            "description": "60ml.",
+            "price": "$12"
+          },
+          {
+            "category": "Chinese Tea",
+            "name": "香片 Jasmine",
+            "description": "Delicate jasmine blossoms infuse fragrant floral notes into green tea.",
+            "price": "$4 pp"
+          },
+          {
+            "category": "Chinese Tea",
+            "name": "普洱 Pu Er",
+            "description": "Earthy, aged pu-erh delivers deep, smooth, fermented complexity.",
+            "price": "$4 pp"
+          },
+          {
+            "category": "Chinese Tea",
+            "name": "鐵觀音 Tieguanyin",
+            "description": "Rolled oolong offers creamy, floral, orchid-like Tieguanyin elegance.",
+            "price": "$4 pp"
+          },
+          {
+            "category": "Chinese Tea",
+            "name": "菊花 Chrysanthemum",
+            "description": "Sweet chrysanthemum flowers create a light, refreshing herbal infusion.",
+            "price": "$4 pp"
+          },
+          {
+            "category": "Non-Alcoholic",
+            "name": "Soft Drinks",
+            "description": "Coke, Coke Zero, Sprite or ginger beer.",
+            "price": "$5"
+          },
+          {
+            "category": "Non-Alcoholic",
+            "name": "Lemon Lime Bitters",
+            "description": "",
+            "price": "$6"
+          },
+          {
+            "category": "Non-Alcoholic",
+            "name": "Lemon or Peach Iced Tea",
+            "description": "",
+            "price": "$6"
+          },
+          {
+            "category": "Non-Alcoholic",
+            "name": "Pink Lemonade",
+            "description": "",
+            "price": "$6"
+          },
+          {
+            "category": "Non-Alcoholic",
+            "name": "Lychee Lemon Soda",
+            "description": "",
+            "price": "$6"
+          },
+          {
+            "category": "Non-Alcoholic",
+            "name": "Fresh Lemon Soda",
+            "description": "",
+            "price": "$6"
+          },
+          {
+            "category": "Non-Alcoholic",
+            "name": "Juices",
+            "description": "Orange, apple or cranberry.",
+            "price": "$6"
+          },
+          {
+            "category": "Non-Alcoholic",
+            "name": "Sparkling Water",
+            "description": "750ml.",
+            "price": "$10"
+          },
+          {
+            "category": "Non-Alcoholic",
+            "name": "Mineral Water",
+            "description": "1000ml.",
+            "price": "$10"
+          },
+          {
+            "category": "Desserts",
+            "name": "Deep Fried Ice Cream",
+            "description": "With caramel sauce.",
+            "price": "$12"
+          },
+          {
+            "category": "Desserts",
+            "name": "Banana Fritters",
+            "description": "With ice cream and assorted toppings.",
+            "price": "$12"
+          },
+          {
+            "category": "Desserts",
+            "name": "Mango Pudding",
+            "description": "Served with evaporated milk.",
+            "price": "$10"
+          },
+          {
+            "category": "Desserts",
+            "name": "Osmanthus Coconut Milk Jelly",
+            "description": "",
+            "price": "$10"
+          },
+          {
+            "category": "Desserts",
+            "name": "Ice Cream Sundae",
+            "description": "Choice of chocolate, caramel or strawberry topping.",
+            "price": "$9"
+          },
+          {
+            "category": "Desserts",
+            "name": "Affogato",
+            "description": "Served with Frangelico.",
+            "price": "$14"
+          },
+          {
+            "category": "Desserts",
+            "name": "Vanilla Ice Cream",
+            "description": "Choice of chocolate, caramel or strawberry topping.",
+            "price": "$7"
+          }
+        ]
+      }
+    ]
+  }
+};

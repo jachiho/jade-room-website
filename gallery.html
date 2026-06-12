@@ -3,155 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Jade Room gallery with photos of the Robina dining room, lanterns, cane chairs, checker floors and contemporary Chinese pop art."
-    />
-    <title>Gallery | Jade Room</title>
+    <meta name="description" content="Inside Jade Room: checker floors, cane chairs, lanterns, pop art walls and the private lantern room." />
+    <title>Gallery | Jade Room | 翠玉軒</title>
     <link rel="canonical" href="https://www.jaderoomchinese.com.au/gallery.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Gallery | Jade Room" />
-    <meta
-      property="og:description"
-      content="See Jade Room’s Robina dining room: lanterns, cane chairs, checker floors, green leather and contemporary Chinese pop art."
-    />
-    <meta property="og:url" content="https://www.jaderoomchinese.com.au/gallery.html" />
-    <meta property="og:image" content="https://www.jaderoomchinese.com.au/assets/venue-fitout/main-dining-ceiling-1600.jpg" />
+    <meta property="og:title" content="Gallery | Jade Room | 翠玉軒" />
+    <meta property="og:description" content="Inside Jade Room: checker floors, cane chairs, lanterns, pop art walls and the private lantern room." />
+    <meta property="og:image" content="https://www.jaderoomchinese.com.au/assets/responsive/jade-room-food-1100.jpg" />
     <meta property="og:site_name" content="Jade Room" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Gallery | Jade Room" />
-    <meta
-      name="twitter:description"
-      content="See Jade Room’s Robina dining room: lanterns, cane chairs, checker floors, green leather and contemporary Chinese pop art."
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&family=Noto+Serif+TC:wght@700;900&display=swap"
+      rel="stylesheet"
     />
-    <meta name="twitter:image" content="https://www.jaderoomchinese.com.au/assets/venue-fitout/main-dining-ceiling-1600.jpg" />
-    <link rel="preload" href="/assets/venue-fitout/main-dining-ceiling-1600.jpg" as="image" />
-    <link rel="stylesheet" href="/styles.css?v=fitout-34" />
+    <link rel="stylesheet" href="styles.css?v=jrd-2" />
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
-      <a class="brand-mark" href="/" aria-label="Jade Room home"><img src="/assets/brand/jade-room-logo-header.png" alt="Jade Room 翠玉軒" /></a>
+      <a class="brand-mark" href="index.html" aria-label="Jade Room home">Jade Room <span class="zh">翠玉軒</span></a>
       <nav class="nav-links" id="mobile-menu" aria-label="Site sections">
-        <a href="/">Home</a>
-        <a href="/menu.html">Menu</a>
-        <a href="/private-room.html">Private Room</a>
-        <a href="/gallery.html">Gallery</a>
-        <a href="/#gift-cards">Gift Cards</a>
-        <a href="/#visit">Visit</a>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="private-room.html">Private Room</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#gift-cards">Gift Cards</a>
+        <a href="index.html#visit">Visit</a>
+        <a href="index.html#bookings">Book a Table</a>
       </nav>
       <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
-      <a class="header-action" data-content="bookingUrl" href="/#bookings">Book</a>
+      <a class="button primary header-action" href="index.html#bookings">Book a Table</a>
     </header>
 
     <main>
-      <section class="menu-hero gallery-hero">
-        <div class="menu-hero-copy">
-          <p class="eyebrow">Gallery</p>
-          <h1>Lanterns, Cane & Pop Art</h1>
-          <p class="chinese-name">翠玉軒</p>
-          <p>
-            A closer look at the Jade Room fitout: colourful ceiling lights,
-            checker floors, cane chairs, green leather and contemporary Chinese
-            pop art.
+      <section class="page-hero">
+        <div class="page-hero-media" style="background-image: url('assets/venue-fitout/green-chair-booths-1600.jpg')" aria-hidden="true"></div>
+        <div class="page-hero-inner">
+          <p class="hero-zh" aria-hidden="true">翠玉軒</p>
+          <h1>The Room</h1>
+          <p class="lede">
+            Checker floors, cane-backed chairs, glowing lanterns, green leather
+            and pop-art walls made for long shared dinners.
           </p>
         </div>
       </section>
 
-      <section class="section visual-section gallery-section" aria-label="Jade Room gallery">
-        <div class="visual-grid fitout-collage">
+      <section class="section">
+        <div class="section-heading">
+          <h2>Gallery</h2>
+          <a class="section-link" href="index.html#bookings">Book a table →</a>
+        </div>
+        <div class="gallery-grid">
           <figure class="visual-tile large">
-            <img
-              src="/assets/venue-fitout/main-dining-ceiling-1000.jpg"
-              srcset="
-                /assets/venue-fitout/main-dining-ceiling-700.jpg    700w,
-                /assets/venue-fitout/main-dining-ceiling-1000.jpg 1000w,
-                /assets/venue-fitout/main-dining-ceiling-1600.jpg 1600w
-              "
-              sizes="(max-width: 820px) calc(100vw - 2rem), 48vw"
-              loading="eager"
-              fetchpriority="high"
-              alt="Jade Room dining room with green and blue ceiling lights, timber booths and green chairs"
-            />
-            <figcaption>Colourful ceiling</figcaption>
+            <img src="assets/venue-fitout/main-dining-ceiling-1000.jpg"
+              srcset="assets/venue-fitout/main-dining-ceiling-700.jpg 700w, assets/venue-fitout/main-dining-ceiling-1000.jpg 1000w, assets/venue-fitout/main-dining-ceiling-1600.jpg 1600w"
+              sizes="(max-width: 540px) 100vw, (max-width: 980px) 100vw, 50vw"
+              loading="lazy" alt="Main dining room at Jade Room with lantern-lined ceiling and long tables" />
           </figure>
           <figure class="visual-tile">
-            <img
-              src="/assets/venue-fitout/olive-checker-lanterns-700.jpg"
-              srcset="
-                /assets/venue-fitout/olive-checker-lanterns-700.jpg    700w,
-                /assets/venue-fitout/olive-checker-lanterns-1000.jpg 1000w,
-                /assets/venue-fitout/olive-checker-lanterns-1600.jpg 1600w
-              "
-              sizes="(max-width: 820px) calc(100vw - 2rem), 24vw"
-              loading="lazy"
-              alt="Olive patterned wall, checker floor, cane booths and glowing lanterns at Jade Room"
-            />
-            <figcaption>Checker floor</figcaption>
+            <img src="assets/venue-fitout/olive-checker-lanterns-700.jpg"
+              srcset="assets/venue-fitout/olive-checker-lanterns-700.jpg 700w, assets/venue-fitout/olive-checker-lanterns-1000.jpg 1000w"
+              sizes="(max-width: 540px) 100vw, 25vw"
+              loading="lazy" alt="Olive banquettes, checker floor and glowing lanterns" />
           </figure>
           <figure class="visual-tile">
-            <img
-              src="/assets/venue-fitout/round-table-pop-art-700.jpg"
-              srcset="
-                /assets/venue-fitout/round-table-pop-art-700.jpg    700w,
-                /assets/venue-fitout/round-table-pop-art-1000.jpg 1000w,
-                /assets/venue-fitout/round-table-pop-art-1600.jpg 1600w
-              "
-              sizes="(max-width: 820px) calc(100vw - 2rem), 24vw"
-              loading="lazy"
-              alt="Round Jade Room table with cane chairs, lantern and colourful contemporary Chinese pop art"
-            />
-            <figcaption>Pop art walls</figcaption>
+            <img src="assets/venue-fitout/round-table-pop-art-700.jpg"
+              srcset="assets/venue-fitout/round-table-pop-art-700.jpg 700w, assets/venue-fitout/round-table-pop-art-1000.jpg 1000w"
+              sizes="(max-width: 540px) 100vw, 25vw"
+              loading="lazy" alt="Round marble table in front of contemporary Chinese pop art" />
           </figure>
           <figure class="visual-tile wide">
-            <img
-              src="/assets/venue-fitout/green-chair-booths-1000.jpg"
-              srcset="
-                /assets/venue-fitout/green-chair-booths-700.jpg    700w,
-                /assets/venue-fitout/green-chair-booths-1000.jpg 1000w,
-                /assets/venue-fitout/green-chair-booths-1600.jpg 1600w
-              "
-              sizes="(max-width: 820px) calc(100vw - 2rem), 48vw"
-              loading="lazy"
-              alt="Green leather chairs and warm timber booths inside Jade Room"
-            />
-            <figcaption>Green leather</figcaption>
+            <img src="assets/venue-fitout/green-chair-booths-1000.jpg"
+              srcset="assets/venue-fitout/green-chair-booths-700.jpg 700w, assets/venue-fitout/green-chair-booths-1000.jpg 1000w, assets/venue-fitout/green-chair-booths-1600.jpg 1600w"
+              sizes="(max-width: 540px) 100vw, 50vw"
+              loading="lazy" alt="Green leather booths and cane chairs at Jade Room" />
+          </figure>
+          <figure class="visual-tile wide">
+            <img src="assets/venue-fitout/private-lantern-room-1000.jpg"
+              srcset="assets/venue-fitout/private-lantern-room-700.jpg 700w, assets/venue-fitout/private-lantern-room-1000.jpg 1000w, assets/venue-fitout/private-lantern-room-1600.jpg 1600w"
+              sizes="(max-width: 540px) 100vw, 50vw"
+              loading="lazy" alt="Private lantern room with plum walls and marble table" />
           </figure>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-brand">
-        <img class="footer-logo" src="/assets/brand/jade-room-logo-header.png" alt="Jade Room 翠玉軒" />
-      </div>
-      <div class="footer-info">
-        <section>
+      <div class="footer-inner">
+        <div class="footer-wordmark">
+          Jade Room
+          <span class="zh">翠玉軒</span>
+        </div>
+        <div class="footer-info-block">
           <h2>Opening Hours</h2>
           <div data-hours-list>
             <span>Yum Cha: 11am - 3pm</span>
             <span>Dinner: 5pm - 9pm</span>
             <span>Open: 7 Days</span>
           </div>
-        </section>
-        <section>
+        </div>
+        <div class="footer-info-block">
           <h2>Contact</h2>
-          <a data-content="email" href="mailto:info@jaderoomchinese.com.au">
-            info@jaderoomchinese.com.au
-          </a>
+          <a data-content="email" href="mailto:info@jaderoomchinese.com.au">info@jaderoomchinese.com.au</a>
           <a data-content="phone" href="tel:0721416732">07 2141 6732</a>
-          <a
-            data-content="address"
-            data-map-link
-            href="https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a data-content="address" data-map-link href="https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6" target="_blank" rel="noreferrer">
             Shop 5045, 19 Robina Town Centre Drive, Robina Town Centre, QLD 4230
           </a>
-        </section>
+        </div>
       </div>
+      <p class="footer-note">© Jade Room · Robina Town Centre · Bold Chinese dining &amp; yum cha</p>
     </footer>
 
-    <script src="/script.js?v=fitout-34" type="module"></script>
+    <div class="mobile-action-bar" aria-label="Quick actions">
+      <a class="button jade" data-tel-link href="tel:0721416732">Call</a>
+      <a class="button primary" href="index.html#bookings">Book a table</a>
+    </div>
+
+    <script src="content-data.js?v=jrd-2"></script>
+    <script src="script.js?v=jrd-3"></script>
   </body>
 </html>

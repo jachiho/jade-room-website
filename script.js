@@ -1,12 +1,27 @@
+// pages inside /menu/ live one level down
+const BASE = document.body.dataset.menuPageId ? "../" : "";
+
 const contentPaths = {
-  site: "/content/site.json",
-  menu: "/content/menu.json",
+  site: `${BASE}content/site.json`,
+  menu: `${BASE}content/menu.json`,
 };
 
+// embedded snapshot (content-data.js) — used when fetch is unavailable (file://)
+const embedded = window.JADE_CONTENT || {};
+
 const fallbackContent = {
-  site: {},
-  menu: { highlights: [], sections: [] },
+  site: embedded.site || {},
+  menu: embedded.menu || { highlights: [], sections: [] },
 };
+
+// content JSON refers to assets with absolute paths ("/assets/...");
+// rewrite them so they work from a subfolder or straight off the disk
+function localAsset(src) {
+  if (typeof src === "string" && src.startsWith("/") && !src.startsWith("//")) {
+    return `${BASE}${src.slice(1)}`;
+  }
+  return src;
+}
 
 async function getJson(path, fallback) {
   try {
@@ -49,7 +64,7 @@ function renderHours(hours = []) {
 function getResponsiveImageAttrs(src) {
   if (!src) return {};
 
-  if (src.includes("/assets/menu-responsive/") && src.endsWith("-700.jpg")) {
+  if (src.includes("assets/menu-responsive/") && src.endsWith("-700.jpg")) {
     return {
       srcset: `${src.replace("-700.jpg", "-450.jpg")} 450w, ${src} 700w`,
       sizes: "(max-width: 820px) calc(100vw - 2rem), 33vw",
@@ -95,10 +110,10 @@ function renderMenuHighlights(items = []) {
       imageWrap.className = "menu-item-image";
 
       const image = document.createElement("img");
-      image.src = item.image;
+      image.src = localAsset(item.image);
       image.alt = item.imageAlt || item.name;
       image.loading = "lazy";
-      applyResponsiveImageAttrs(image, item.image);
+      applyResponsiveImageAttrs(image, localAsset(item.image));
 
       imageWrap.append(image);
       article.append(imageWrap);
@@ -123,15 +138,26 @@ function renderMenuHighlights(items = []) {
   });
 }
 
+function menuPageHref(section) {
+  // keep links working whether v2 is served as site root or as a /v2/ preview
+  const base = document.body.dataset.menuPageId ? "" : "menu/";
+  if (document.body.dataset.menuPageId) {
+    return `${section.id}.html`;
+  }
+  return `${base}${section.id}.html`;
+}
+
 function renderMenuNav(sections = []) {
   const nav = document.querySelector("[data-menu-nav]");
   if (!nav) return;
 
+  const currentId = document.body.dataset.menuPageId;
   nav.innerHTML = "";
   sections.forEach((section) => {
     const link = document.createElement("a");
-    link.href = section.pageUrl || `/menu/${section.id}.html`;
+    link.href = menuPageHref(section);
     link.textContent = section.label;
+    if (section.id === currentId) link.className = "active";
     nav.append(link);
   });
 }
@@ -204,10 +230,10 @@ function renderMenuDirectory(sections = []) {
     if (section.image) {
       const figure = document.createElement("figure");
       const image = document.createElement("img");
-      image.src = section.image;
+      image.src = localAsset(section.image);
       image.alt = section.imageAlt || section.label;
       image.loading = "lazy";
-      applyResponsiveImageAttrs(image, section.image);
+      applyResponsiveImageAttrs(image, localAsset(section.image));
       figure.append(image);
       card.append(figure);
     }
@@ -215,45 +241,30 @@ function renderMenuDirectory(sections = []) {
     const body = document.createElement("div");
     body.className = "menu-directory-body";
 
-    const eyebrow = document.createElement("p");
-    eyebrow.className = "eyebrow";
-    eyebrow.textContent = "Full menu";
-
     const title = document.createElement("h3");
     title.textContent = section.label;
 
     const intro = document.createElement("p");
     intro.textContent = section.intro;
 
-    const preview = document.createElement("ul");
-    preview.className = "menu-preview-list";
-    section.items
-      .filter((item) => item.name && item.price)
-      .slice(0, 4)
-      .forEach((item) => {
-        const line = document.createElement("li");
-        line.textContent = item.name;
-        preview.append(line);
-      });
-
     const actions = document.createElement("div");
     actions.className = "menu-directory-actions";
 
     const pageLink = document.createElement("a");
-    pageLink.className = "button primary";
-    pageLink.href = section.pageUrl || `/menu/${section.id}.html`;
+    pageLink.className = "button jade";
+    pageLink.href = `menu/${section.id}.html`;
     pageLink.textContent = "View menu";
     actions.append(pageLink);
 
     if (section.pdfUrl) {
       const pdfLink = document.createElement("a");
-      pdfLink.className = "button secondary";
-      pdfLink.href = section.pdfUrl;
-      pdfLink.textContent = "Download PDF";
+      pdfLink.className = "button ghost";
+      pdfLink.href = localAsset(section.pdfUrl);
+      pdfLink.textContent = "PDF";
       actions.append(pdfLink);
     }
 
-    body.append(eyebrow, title, intro, preview, actions);
+    body.append(title, intro, actions);
     card.append(body);
     directory.append(card);
   });
@@ -277,28 +288,21 @@ function renderMenuDetail(sections = []) {
 
   const hero = document.querySelector("[data-menu-detail-hero]");
   if (hero && section.image) {
-    hero.style.backgroundImage = `linear-gradient(90deg, rgba(17, 17, 15, 0.88), rgba(17, 17, 15, 0.42)), linear-gradient(0deg, rgba(17, 17, 15, 1), rgba(17, 17, 15, 0.06) 46%), url("${section.image}")`;
+    hero.style.backgroundImage = `url("${localAsset(section.image)}")`;
   }
 
   target.innerHTML = "";
   const heading = document.createElement("div");
   heading.className = "menu-panel-heading";
 
-  const copy = document.createElement("div");
-  const eyebrow = document.createElement("p");
-  eyebrow.className = "eyebrow";
-  eyebrow.textContent = "Full menu";
-
   const headingTitle = document.createElement("h2");
-  headingTitle.textContent = section.label;
-
-  copy.append(eyebrow, headingTitle);
-  heading.append(copy);
+  headingTitle.textContent = `${section.label} Menu`;
+  heading.append(headingTitle);
 
   if (section.pdfUrl) {
     const pdfLink = document.createElement("a");
-    pdfLink.className = "button secondary menu-pdf-link";
-    pdfLink.href = section.pdfUrl;
+    pdfLink.className = "button ghost menu-pdf-link";
+    pdfLink.href = localAsset(section.pdfUrl);
     pdfLink.textContent = "Download PDF";
     heading.append(pdfLink);
   }
@@ -339,12 +343,14 @@ function initMobileMenu() {
 
   const closeMenu = () => {
     toggle.setAttribute("aria-expanded", "false");
+    toggle.textContent = "Menu";
     nav.classList.remove("is-open");
   };
 
   toggle.addEventListener("click", () => {
     const isOpen = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!isOpen));
+    toggle.textContent = isOpen ? "Menu" : "Close";
     nav.classList.toggle("is-open", !isOpen);
   });
 
@@ -363,26 +369,40 @@ function initMobileMenu() {
   });
 }
 
+function initMarquees() {
+  document.querySelectorAll(".marquee-track").forEach((track) => {
+    // duplicate the content so the loop is seamless
+    const clone = track.firstElementChild?.cloneNode(true);
+    if (clone) {
+      clone.setAttribute("aria-hidden", "true");
+      track.append(clone);
+    }
+  });
+}
+
 function initMotion() {
   const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
   if (motionQuery.matches) return;
 
   const revealTargets = [
-    ".intro-band",
+    ".intro-copy",
+    ".intro-media figure",
     ".section-heading",
     ".booking-panel",
-    ".visual-tile",
-    ".food-feature",
+    ".booking-aside .aside-card",
     ".menu-item",
     ".feature-copy",
-    ".feature-band > img",
-    ".gift-card-band",
-    ".visit-layout",
+    ".feature-photo",
+    ".gift-inner > *",
+    ".press-card",
+    ".visit-panel",
+    ".map-panel",
+    ".visual-tile",
     ".menu-directory-card",
     ".menu-panel-heading",
-    ".menu-row",
+    ".menu-category-panel",
     ".private-room-intro",
-    ".private-room-photo",
+    ".stat-chip",
   ];
 
   const elements = document.querySelectorAll(revealTargets.join(","));
@@ -426,19 +446,19 @@ async function init() {
   setText("[data-content='phone']", site.phone);
   setText("[data-content='email']", site.email);
 
-  setHref("[data-content='bookingUrl']", site.bookingUrl);
   setHref("[data-content='enquiryUrl']", site.enquiryUrl || `mailto:${site.email || ""}`);
-  setHref("[data-content='privateEventsUrl']", site.privateEventsUrl || "/private-room.html");
+  setHref("[data-content='privateEventsUrl']", site.privateEventsUrl || "private-room.html");
   setHref(
     "[data-content='privateEventsEmailUrl']",
     site.privateEventsEmail ? `mailto:${site.privateEventsEmail}` : "mailto:info@jaderoomchinese.com.au",
   );
-  setHref("[data-content='banquetMenuUrl']", site.banquetMenuUrl || "/menu/banquet.html");
-  setHref("[data-content='drinksPackageUrl']", site.drinksPackageUrl || "/assets/menus/drinks-package.pdf");
+  setHref("[data-content='banquetMenuUrl']", localAsset(site.banquetMenuUrl) || `${BASE}menu/banquet.html`);
+  setHref("[data-content='drinksPackageUrl']", localAsset(site.drinksPackageUrl) || `${BASE}assets/menus/drinks-package.pdf`);
   setHref("[data-content='giftCardUrl']", site.giftCardUrl || "#visit");
   setHref("[data-content='mapUrl']", site.mapUrl || "https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6");
   setHref("[data-map-link]", site.mapUrl || "https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6");
   setHref("[data-content='phone']", site.phone ? `tel:${site.phone.replace(/\s/g, "")}` : "");
+  setHref("[data-tel-link]", site.phone ? `tel:${site.phone.replace(/\s/g, "")}` : "");
   setHref("[data-content='email']", site.email ? `mailto:${site.email}` : "");
 
   renderHours(site.hours);
@@ -448,6 +468,7 @@ async function init() {
   renderMenuDetail(menu.sections);
   renderBookingWidget();
   initMobileMenu();
+  initMarquees();
   initMotion();
 }
 

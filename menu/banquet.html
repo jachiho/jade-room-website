@@ -3,76 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jade Room banquet menu for shared Chinese dining, celebrations, private room bookings and group occasions." />
+    <meta name="description" content="Jade Room banquet menus for groups and celebrations — shared feasting, long tables and lantern light." />
     <title>Banquet Menu | Jade Room</title>
     <link rel="canonical" href="https://www.jaderoomchinese.com.au/menu/banquet.html" />
-    <meta property="og:type" content="website" />
     <meta property="og:title" content="Banquet Menu | Jade Room" />
-    <meta property="og:description" content="Jade Room banquet menu for shared Chinese dining, celebrations, private room bookings and group occasions." />
-    <meta property="og:url" content="https://www.jaderoomchinese.com.au/menu/banquet.html" />
-    <meta property="og:image" content="https://www.jaderoomchinese.com.au/assets/venue-fitout/private-lantern-room-1600.jpg" />
+    <meta property="og:description" content="Jade Room banquet menus for groups and celebrations — shared feasting, long tables and lantern light." />
+    <meta property="og:image" content="https://www.jaderoomchinese.com.au/assets/responsive/jade-room-food-1100.jpg" />
     <meta property="og:site_name" content="Jade Room" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Banquet Menu | Jade Room" />
-    <meta name="twitter:description" content="Jade Room banquet menu for shared Chinese dining, celebrations, private room bookings and group occasions." />
-    <meta name="twitter:image" content="https://www.jaderoomchinese.com.au/assets/venue-fitout/private-lantern-room-1600.jpg" />
-    <link rel="stylesheet" href="/styles.css?v=fitout-34" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&family=Noto+Serif+TC:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css?v=jrd-2" />
   </head>
   <body data-menu-page-id="banquet">
     <header class="site-header" aria-label="Primary navigation">
-      <a class="brand-mark" href="/" aria-label="Jade Room home"><img src="/assets/brand/jade-room-logo-header.png" alt="Jade Room 翠玉軒" /></a>
+      <a class="brand-mark" href="../index.html" aria-label="Jade Room home">Jade Room <span class="zh">翠玉軒</span></a>
       <nav class="nav-links" id="mobile-menu" aria-label="Site sections">
-        <a href="/">Home</a>
-        <a href="/menu.html">Menu</a>
-        <a href="/private-room.html">Private Room</a>
-        <a href="/gallery.html">Gallery</a>
-        <a href="/#gift-cards">Gift Cards</a>
-        <a href="/#visit">Visit</a>
+        <a href="../index.html">Home</a>
+        <a href="../menu.html">Menu</a>
+        <a href="../private-room.html">Private Room</a>
+        <a href="../gallery.html">Gallery</a>
+        <a href="../index.html#gift-cards">Gift Cards</a>
+        <a href="../index.html#visit">Visit</a>
+        <a href="../index.html#bookings">Book a Table</a>
       </nav>
       <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
-      <a class="header-action" data-content="bookingUrl" href="/#bookings">Book</a>
+      <a class="button primary header-action" href="../index.html#bookings">Book a Table</a>
     </header>
 
     <main>
-      <section class="menu-detail-hero" data-menu-detail-hero>
-        <div class="menu-hero-copy">
-          <p class="eyebrow">Menu</p>
-          <h1 data-menu-detail-title>Banquet</h1>
-          <p class="chinese-name">翠玉軒</p>
-          <p data-menu-detail-intro></p>
+      <section class="page-hero">
+        <div class="page-hero-media" data-menu-detail-hero aria-hidden="true"></div>
+        <div class="page-hero-inner">
+          <p class="hero-zh" aria-hidden="true">菜單</p>
+          <h1 data-menu-detail-title>Menu</h1>
+          <p class="lede" data-menu-detail-intro></p>
         </div>
       </section>
 
-      <section class="section full-menu-section">
+      <section class="section">
         <nav class="menu-tabs" data-menu-nav aria-label="Other menu categories"></nav>
         <div data-menu-detail></div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-brand">
-        <img class="footer-logo" src="/assets/brand/jade-room-logo-header.png" alt="Jade Room 翠玉軒" />
-      </div>
-      <div class="footer-info">
-        <section>
+      <div class="footer-inner">
+        <div class="footer-wordmark">
+          Jade Room
+          <span class="zh">翠玉軒</span>
+        </div>
+        <div class="footer-info-block">
           <h2>Opening Hours</h2>
           <div data-hours-list>
             <span>Yum Cha: 11am - 3pm</span>
             <span>Dinner: 5pm - 9pm</span>
             <span>Open: 7 Days</span>
           </div>
-        </section>
-        <section>
+        </div>
+        <div class="footer-info-block">
           <h2>Contact</h2>
-          <a data-content="email" href="mailto:info@jaderoomchinese.com.au">
-            info@jaderoomchinese.com.au
-          </a>
+          <a data-content="email" href="mailto:info@jaderoomchinese.com.au">info@jaderoomchinese.com.au</a>
           <a data-content="phone" href="tel:0721416732">07 2141 6732</a>
-          <a data-content="address" data-map-link href="https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6" target="_blank" rel="noreferrer">Shop 5045, 19 Robina Town Centre Drive, Robina Town Centre, QLD 4230</a>
-        </section>
+          <a data-content="address" data-map-link href="https://maps.app.goo.gl/iH2ejvEQFr9DbDYf6" target="_blank" rel="noreferrer">
+            Shop 5045, 19 Robina Town Centre Drive, Robina Town Centre, QLD 4230
+          </a>
+        </div>
       </div>
+      <p class="footer-note">© Jade Room · Robina Town Centre · Bold Chinese dining &amp; yum cha</p>
     </footer>
 
-    <script src="/script.js?v=fitout-34" type="module"></script>
+    <div class="mobile-action-bar" aria-label="Quick actions">
+      <a class="button jade" data-tel-link href="tel:0721416732">Call</a>
+      <a class="button primary" href="../index.html#bookings">Book a table</a>
+    </div>
+
+    <script src="../content-data.js?v=jrd-2"></script>
+    <script src="../script.js?v=jrd-3"></script>
   </body>
 </html>
