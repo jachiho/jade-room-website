@@ -278,8 +278,6 @@ function renderMenuDetail(sections = []) {
   const section = sections.find((item) => item.id === pageId);
   if (!section) return;
 
-  document.title = `${section.label} Menu | Jade Room`;
-
   const title = document.querySelector("[data-menu-detail-title]");
   if (title) title.textContent = section.label;
 
